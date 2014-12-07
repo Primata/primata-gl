@@ -2,20 +2,20 @@
 //  main.cpp
 //  Klephtica
 //
-//  Created by Carlos Sousa on 2014-11-25.
+//  Created by Carlos Sousa and Joao Bajouco on 2014-11-25.
 //  Copyright (c) 2014 primatas. All rights reserved.
 //
 
-/*
-#include <stdlib.h>
-#include <cstdio>
-#include <string.h>
-#include <math.h>
-*/
-
 #include <iostream>
+
+#if __APPLE__
+#include <OpenGL/OpenGL.h>
+#include <OpenGL/gl.h> // Usar gl3
+#include <SDL2/SDL.h>
+#elif __linux__
 #include <SDL.h>
 #include <GL/gl.h>
+#endif
 
 using namespace std;
 

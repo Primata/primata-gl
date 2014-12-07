@@ -10,3 +10,4 @@ gitignore
 
 # This is the build directory of the Xcode project
 DerivedData/
+Build/
